@@ -56,7 +56,7 @@ def load_image(image_path, coords, font_color):
 def card_style(style_number):
     global current_style
     current_style = style_number
-    image_path = f"C:\\Users\\setco\\Desktop\\VisitingCard\\style\\card_style_{style_number}.png"
+    image_path = f"~\\VisitingCard\\style\\card_style_{style_number}.png"
     coords = coordinates[style_number]
     font_color = colors[style_number]
     load_image(image_path, coords, font_color)
@@ -70,7 +70,7 @@ def delete_image():
     phone_picture.set("")
 
 def download_image():
-    image_path = f"C:\\Users\\setco\\Desktop\\VisitingCard\\style\\card_style_{current_style}.png"
+    image_path = f"~\\VisitingCard\\style\\card_style_{current_style}.png"
     coords = coordinates[current_style]
     font_color = colors[current_style]
     pil_image = load_image(image_path, coords, font_color)
@@ -80,7 +80,7 @@ def download_image():
         messagebox.showinfo("Success", "Image saved successfully")
 
 def update_image(*args):
-    image_path = f"C:\\Users\\setco\\Desktop\\VisitingCard\\style\\card_style_{current_style}.png"
+    image_path = f"~\\VisitingCard\\style\\card_style_{current_style}.png"
     coords = coordinates[current_style]
     font_color = colors[current_style]
     load_image(image_path, coords, font_color)
